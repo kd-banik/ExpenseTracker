@@ -5,5 +5,40 @@
     background: #000000;
 }
 .side-bar-content{
-    
+    padding : 0px;
+}
+.side-bar-content > li{
+    display: block;
+    padding: 0px 0px 0px 0px;
+    font-size: 17px;
+    list-style: none;
+    margin-right: 0px;
+}
+.side-bar-content > li > a{
+
+    text-decoration: none;
+    padding: 10px 10px 10px 30px;
+    color: #FFFFFF;
+    display: block;
+}
+.side-bar-content > li > a:hover{
+
+    background-color: #F8F8FF;
+    color: #000000;
+}
+.side-bar-content > li > .active{
+    background-color: #F8F8FF;
+    color: #000000;
+}
+.menu-drop{
+    padding-left: 0px;
+}
+.menu-drop-item{
+    display: block;
+    font-size: 17px;
+    padding: 5px 5px 5px 50px;
+    margin: 0px;
+}
+.menu-drop > .menu-drop-item{
+    color: #727a82;
 }
