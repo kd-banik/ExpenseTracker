@@ -3,6 +3,7 @@
     z-index: 1;
     width: 200px;
     background: #000000;
+    float: left;
 }
 .side-bar-content{
     padding : 0px;
