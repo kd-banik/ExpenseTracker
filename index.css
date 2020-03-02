@@ -1,4 +1,4 @@
-	
+	/* Starting of index page css*/
 			body{
 				position: absolute;
 				padding: 0;
@@ -44,43 +44,41 @@
 				bottom: 0;
 				}
 
+			.flogo{
+					padding-top: 15px;
+					font-family: cambria;
+				}
+
 			.brand{
-				/*font-size: 10px;*/
 				color: white;
 				width: 8%;
 				text-decoration: none;
-				/*padding: 2% 2% 2% 2%;*/
 				box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
 				padding: 5px;
 				float: left;
 			}
 			.brandf{
-				/*font-size: 10px;*/
 				color: white;
 				width: 8%;
 				text-decoration: none;
-				/*padding: 2% 2% 2% 2%;*/
-				/*box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);*/
-				padding: 5px;
+				padding-bottom: 15px;
 				float: left;
 			}
 			.left{
-				float: right;
+				float: left;
 				margin: 0;
 				width: 2%;
 				height: 60%;
 				padding-right: 4%;
 			}
-			ul>li {
-				display: inline-block;
-				padding: 20px;
-				font-size: 30px;
-				list-style: none;
-				margin-right: 30px;
-			}
-			li>a {
-				text-decoration: none;
-				color: white;
+			.right{
+				float: right;
+				margin: 0;
+				width: 2%;
+				height: 60%;
+				padding-right: 4%;
+				padding-top: 10px;
+				font-size: 20px;
 			}
 			.indent{
 				float: left;
@@ -107,3 +105,4 @@
 				font-size: 30px;
 				color: white;
 			}
+/* Ending of index page css*/
