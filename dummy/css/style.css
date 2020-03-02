@@ -1,0 +1,165 @@
+
+	/**************************************index page code by Kunal Paloi*******************************************************/
+			body{
+				position: absolute;
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				height: 100%;
+			}
+			.boxx{
+				position: relative;
+				margin: 5% 10% 10% 10%;
+				background-color: white;
+				width: 35%;
+				height: 100%;
+				z-index: 10;
+				border-radius: 2px;
+             	box-shadow: 10px 8px 16px 0px rgba(0, 0, 0, 0.5);
+				padding: 5%;
+				text-align: center;
+				border-bottom: 10px solid black;
+             	
+			}
+			.outer
+			{
+				position: absolute;
+				width: 100%;
+			}
+			.header {
+				height: 8%;
+				width: 100%;
+				background: #063671 ;
+				box-shadow: 10px 8px 16px 0px ;
+				/*position: fixed;*/
+				/*top: 0;*/
+				}
+
+			.footer {
+				height: 8%;
+				width: 100%;
+				background: white ;
+				box-shadow: 10px 8px 16px 0px ;
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				}
+				
+				.flogo{
+					padding-top: 15px;
+					font-family: cambria;
+				}
+			.brand{
+				/*font-size: 10px;*/
+				color: white;
+				width: 8%;
+				text-decoration: none;
+				/*padding: 2% 2% 2% 2%;*/
+				box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+				padding: 5px;
+				float: left;
+			}
+			.brandf{
+				/*font-size: 10px;*/
+				color: white;
+				width: 8%;
+				text-decoration: none;
+				/*padding: 2% 2% 2% 2%;*/
+				/*box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);*/
+				padding: 5px;
+				float: left;
+			}
+			.right{
+				float: right;
+				margin: 0;
+				width: 2%;
+				height: 60%;
+				padding-right: 4%;
+				padding-top: 10px;
+				font-size: 20px;
+			}
+			ul>li {
+				display: inline-block;
+				padding: 20px;
+				font-size: 30px;
+				list-style: none;
+				margin-right: 30px;
+			}
+			li>a {
+				text-decoration: none;
+				color: white;
+			}
+			.indent{
+				float: left;
+			}
+			.box{
+				width:200px; 
+				height:30px; 
+				border-radius:5%;
+				box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+				
+			}
+			.button
+			{
+				font-size: 15px;
+				width: 120px;	
+				height: 30px;
+				border-radius: 2px;
+             	box-shadow: 4px 5px 8px 0px rgba(0, 0, 0, 0.5);
+				margin: 20px;
+			}
+			.btn {
+				border: none;
+				background-color: black;
+				font-size: 30px;
+				color: white;
+			}
+
+
+
+/**************************************************************SIDE BAR by kushal banik*********************************************************************/
+.side-bar{
+    height: 100%;
+    z-index: 1;
+    width: inherit;
+    background: #000000;
+    float: left;
+}
+.side-bar-content{
+    padding : 0px;
+}
+.side-bar-content > li{
+    display: block;
+    padding: 0px 0px 0px 0px;
+    font-size: 17px;
+    list-style: none;
+    margin-right: 0px;
+}
+.side-bar-content > li > a{
+
+    text-decoration: none;
+    padding: 10px 10px 10px 30px;
+    color: #FFFFFF;
+    display: block;
+}
+.side-bar-content > li > a:hover{
+
+    background-color: #F8F8FF;
+    color: #000000;
+}
+.side-bar-content > li > .active{
+    background-color: #F8F8FF;
+    color: #000000;
+}
+.menu-drop{
+    padding-left: 0px;
+}
+.menu-drop-item{
+    display: block;
+    font-size: 17px;
+    padding: 5px 5px 5px 50px;
+    margin: 0px;
+}
+.menu-drop > .menu-drop-item{
+    color: #727a82;
+}
