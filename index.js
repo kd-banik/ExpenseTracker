@@ -6,13 +6,11 @@ function load () {
 		document.getElementById('register').style="height:100%;";
 		document.getElementById('login').style="display:none";
 		document.getElementById('check').value="Login";
-		//document.getElementById('header').style="display:none";
 	}
 	function login () {
 		document.getElementById('register').style="display:none;";
 		document.getElementById('login').style="display:block;";
 		document.getElementById('check').value="Register";
-		//document.getElementById('header').style="display:none";
 	}
 	function check () {
 		

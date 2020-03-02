@@ -10,7 +10,7 @@
 				position: relative;
 				margin: 5% 10% 10% 10%;
 				background-color: white;
-				width: 35%;
+				width: 40%;
 				height: 100%;
 				z-index: 10;
 				border-radius: 2px;
@@ -100,7 +100,6 @@
 				float: left;
 			}
 			.box{
-				width:200px; 
 				height:30px; 
 				border-radius:5%;
 				box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
@@ -121,3 +120,14 @@
 				font-size: 30px;
 				color: white;
 			}
+			.col-md-6
+			{
+				max-width: 500px;
+
+			}
+			.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
