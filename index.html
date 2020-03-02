@@ -3,23 +3,21 @@
 		<title>Business Cards || Login</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<script type="text/javascript" src="index.js"></script>
- 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+ <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
 	</head>
 
 
 	<body style="background-color:grey;"  onload="load()">
 		
 		<div class="header" id="header">
-			<!--a class="brand" href="">Business Cards</a-->
-		
 			<img class="brand" src="oti.jpg">
-
-			<ul class="left">
-				<li><img class="brand" src="p1.png">
-				<li><img class="brand" src="oti.jpg">
-			</ul>
+			<a class = "right" href = "#" style="height: 10px"><span class = "far fa-bell"></span></a>
+			<a class = "right" href = "#"><span class = "far fa-user"></span></a>
 		</div>
 
 		<div class="outer" id="outer">
@@ -28,13 +26,15 @@
 				
 				<form method="POST" action="">
 					
-					<label for="email">Email ID&nbsp;&nbsp;&nbsp;</label>
-					<input  type="email" class="box" name="email" id="email" value=""placeholder="Email ID" onkeyup="validation()" ><br>
+					<div class="row">
+					<label for="email"  class="col-md-6">Email ID&nbsp;&nbsp;&nbsp;</label>
+					<input  type="email" class="box col-md-6" name="email" id="email" value=""placeholder="Email ID" onkeyup="validation()" ><br></div>
 					<p style="color:red;" id="error"><br><br><br></p>
 					
-					<label for="password">Password&nbsp;&nbsp;&nbsp;</label>
-					<input type="text"  class="box" name="password" id="password" value=""placeholder="Password"><br><br><br>
-
+					<div class="row">
+					<label for="password"  class="col-md-6">Password&nbsp;&nbsp;&nbsp;</label>
+					<input type="text"  class="box col-md-6" name="password" id="password" value=""placeholder="Password"><br><br><br>
+ 						</div>
 					<!--input class="button" type="button" value="Register &nbsp;" onclick="register()"-->
 
 					<input type="submit" class="button"  value="Login" ><br><br>
@@ -46,29 +46,39 @@
 			<center><div class="boxx" id="register">
 				
 				<form method="POST" action="">
-					
-				<label  for="fname">First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-				<input class="box" type="text" name="fname" id="fname" value="" placeholder="First Name"><br><br><br>
+				<div class="row">
+				<label  for="fname" class="col-md-6">First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input class="box col-md-6"  type="text" name="fname" id="fname" value="" placeholder="First Name"><br><br><br>
+				</div>
+
+				<div class="row">	
+				<label class="col-md-6" for-="lname">Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input class="box col-md-6" type="text" name="lname" id="lname" value=""placeholder="Last Name"><br><br><br>
+				</div>
+
+				<div class="row">
+				<label class="col-md-6" for="email">Email ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input class="box col-md-6" type="email" name="email" id="email" value=""placeholder="Email ID"><br><br><br>
+				</div>
+
+			    <div class="row">
+			    <label class="col-md-6" for="degisnation">Designation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input class="box col-md-6" type="text" name="degisnation" id="degisnation" value=""placeholder="Designation"><br><br><br>
+</div>
+
+                <div class="row">
+                 <label class="col-md-6" for="department">Department&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input class="box col-md-6" type="text" name="department" id="department" value=""placeholder="Department"><br><br><br>
+				</div>
+
+<div class="row">
+				<label class="col-md-6" for="password">Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input class="box col-md-6" type="text" name="password" id="password" value=""placeholder="Password"><br><br><br>
+				</div>
+<div class="row">
+                <label class="col-md-6" for="password1">Confirm Password&nbsp;</label>
+				<input class="box col-md-6" type="text" name="password1" id="password1" value=""placeholder="Confirm Password"><br><br><br>	</div>
 				
-				<label for-="lname">Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-				<input class="box" type="text" name="lname" id="lname" value=""placeholder="Last Name"><br><br><br>
-				
-				<label for="email">Email ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-				<input class="box" type="email" name="email" id="email" value=""placeholder="Email ID"><br><br><br>
-				
-			    <label for="degisnation">Designation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-				<input class="box" type="text" name="degisnation" id="degisnation" value=""placeholder="Designation"><br><br><br>
-
-                 <label for="department">Department&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-				<input class="box" type="text" name="department" id="department" value=""placeholder="Department"><br><br><br>
-
-				<label for="password">Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-				<input class="box" type="text" name="password" id="password" value=""placeholder="Password"><br><br><br>
-
-                <label for="password1">Confirm Password&nbsp;</label>
-				<input class="box" type="text" name="password1" id="password1" value=""placeholder="Confirm Password"><br><br><br>	
-				<!--input class="button" type="button" value="Login" onclick="login()"-->
-
 				<input class="button" type="submit" value="Register"><br><br>
 				<a href="#" onclick="login()">Already Registered? Login</a>
 				</form>
@@ -80,41 +90,20 @@
 
 	<!-- Footer Starts -->
 <footer>
-	<!--div class="footer_top">
-		<div class="container">
-			<div class="row">
-				<ul class="col-xs-12 logo">
-					<li><img src="images/id_ios_footer_logo.png" alt=""></li>
-					<li><img src="images/id_android_footer_logo.png" alt=""></li>
-					<li><img src="images/id_drupal_footer_logo.png" alt=""></li>
-					<li><img src="images/id_sf_footer_logo.png" alt=""></li>
-					<li><img src="images/id_amazone_footer_logo.png" alt=""></li>
-					<li><img src="images/id_google_footer_logo.png" alt=""></li>
-					<li><img src="images/id_symantec_footer_logo.png" alt=""></li>
-					<li><img src="images/id_ms_footer_logo.png" alt=""></li>
-				</ul>
-			</div>
-		</div>
-	</div-->
 	<div class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-9 col-sm-9 col-xs-12 no-pad-right">
-					<div class="col-md-2 col-sm-3 col-xs-12 no-pad-left">
-						<a href="javascript.void(0)" class="col-sm-12 col-xs-4 visible-xs" target="_blank"><img class="brandf" src="oti.jpg" alt=""></a>
-                    </div>
+				<div class="flogo">
+						
+							<img class="brandf" src="oti.jpg">
 
-                    <div class="" style="padding-top: 10px">
+                    <div class="" style="">
                      <center>Headquarters: Godrej Waterside, Tower 1, 9th Floor, Sector V, Salt Lake City, West Bengal-700091, India&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                      Copyright &copy; 2018 &nbsp;|&nbsp;
-                     <a href="contact.php">Contact Us</a></center>
+                     <a href="#contact.php">Contact Us</a></center>
                     </div>				
                 </div>
-		  		<div class="footer-copyright col-md-3 col-sm-3 col-xs-12 pull-right">
-									
-					
-				</div>
-			</div>
+		  	</div>
 		</div>
 	</div>
 </footer>

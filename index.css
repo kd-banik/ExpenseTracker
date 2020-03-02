@@ -46,32 +46,45 @@
 				z-index: 1;
 				
 				}
+				.flogo{
+					padding-top: 15px;
+					font-family: cambria;
+				}
+
 
 			.brand{
 				/*font-size: 10px;*/
 				color: white;
 				width: 8%;
 				text-decoration: none;
-				/*padding: 2% 2% 2% 2%;*/
 				box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
 				padding: 5px;
 				float: left;
 			}
 			.brandf{
-				/*font-size: 10px;*/
 				color: white;
 				width: 8%;
 				text-decoration: none;
-				/*padding: 2% 2% 2% 2%;*/
-				/*box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);*/
-				padding: 5px;
+				padding-bottom: 15px;
 				float: left;
 			}
 			.left{
+				float: left;
+				margin: 0;
+				width: 2%;
+				height: 60%;
+				padding-right: 4%;
+			}
+			.right{
 				float: right;
 				margin: 0;
-				
+				width: 2%;
+				height: 60%;
+				padding-right: 4%;
+				padding-top: 10px;
+				font-size: 20px;
 			}
+		
 			ul>li {
 				display: inline-block;
 				padding: 20px;
