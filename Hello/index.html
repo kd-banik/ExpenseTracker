@@ -9,35 +9,55 @@
   <meta name="author" content="">
 
   <title>Sidebar</title>
+  <title>Business Cards || Login</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script type="text/javascript" src="index.js"></script>
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="simple-sidebar.css" rel="stylesheet">
 
+  <style>
+    .d-flex > #sidebar-wrapper > .list-group > a{
+      display: inline-block;
+      color: white;
+    }
+    
+    .d-flex > #sidebar-wrapper > .list-group > .dropdown-menu > a{
+      color: white;
+    }
+  </style>
+
 </head>
 
-<body>
-
+<body style="background-color:grey;"  onload="load()">
+  <div class="header" id="header">
+    <!--a class="brand" href="">Business Cards</a-->
+  
+    <img class="brand" src="oti.jpg">
+    <a class = "right" href = "#" style="height: 10px"><span class = "far fa-bell"></span></a>
+			<a class = "right" href = "#"><span class = "far fa-user"></span></a>
+  </div>
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="bg-dark border-right" id="sidebar-wrapper">
       
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Home</a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark">Home</a>
         
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle list-group-item list-group-item-action bg-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Claims
         </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item bg-dark" href="#">Claim Now</a>
+          <a class="dropdown-item bg-dark" href="#">Pending</a>
+          <a class="dropdown-item bg-dark" href="#">History</a>
         </div>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Approval</a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark">Approval</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -57,9 +77,29 @@
   </div>
   <!-- /#wrapper -->
 
+  <!-- Footer Starts -->
+<footer>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="flogo">
+						
+							<img class="brandf" src="oti.jpg">
+
+                    <div class="" style="">
+                     <center>Headquarters: Godrej Waterside, Tower 1, 9th Floor, Sector V, Salt Lake City, West Bengal-700091, India&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     Copyright &copy; 2018 &nbsp;|&nbsp;
+                     <a href="#contact.php">Contact Us</a></center>
+                    </div>				
+                </div>
+		  	</div>
+		</div>
+	</div>
+</footer>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
   <!-- Menu Toggle Script -->
   <script>
