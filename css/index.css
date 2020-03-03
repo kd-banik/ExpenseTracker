@@ -43,7 +43,11 @@
 				left: 0;
 				bottom: 0;
 				}
-
+				
+				.flogo{
+					padding-top: 15px;
+					font-family: cambria;
+				}
 			.brand{
 				/*font-size: 10px;*/
 				color: white;
