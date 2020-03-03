@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<title>Business Cards || Login</title>
+		<link rel = "stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel = "stylesheet" type = "text/css" href = "css/index.css">
+		<script type="text/javascript" src="index.js"></script>
+		<link rel = "stylesheet" type = "text/css" href = "css/style.css">
+
+	</head>
+
+
+	<body style="background-color:grey;"  onload="load()">
+		
+		<div class="header" id="header">
+			<!--a class="brand" href="">Business Cards</a-->
+		
+			<img class="brand" src="oit.jpg">
+			<a class = "right" href = "#"><span class = "far fa-user"></span></a>
+			<a class = "right" href = "#"><span class = "far fa-bell"></span></a>
+			<!-- <img class="brandf left" src="i2.png">
+			<img class="brandf left" src="human.png"> -->
+		</div>
+		
+		<div class = "side-bar">
+			<ul class = "side-bar-content">
+				<li><a href = "#" class = "active">Home</a></li>
+				<li class = "claim-drop-down">
+						<a href = "#" >Claims</a>
+						<ul class = "menu-drop">
+							<li class = "menu-drop-item">History</li>
+							<li class = "menu-drop-item">New Claim</li>
+						</ul>
+				</li>
+				<!-- <li><a href = "#">Approval</a></li> -->
+				<li><a href = "#">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class ="row">
+			<div class = container style="padding-top: 20px;">
+			 <h2 align = "center"> Enter The Claim Details </h2>
+			</div>
+			<div class = container style="padding-left: 150px; padding-top: 10px; padding-right: 150px">
+				<form class = "p-3">
+					<div style="padding-top: 10px;">
+					<label for="empId" style="font-size:25px">Employee ID </label>
+					<input type="text" class="form-control" id="empId" name="empId"> 
+				</div>
+				   <div style="padding-top: 10px;">
+				   	<label for="projectManagerId" style="font-size:25px">Project Manager ID </label>
+					<input type="text" class="form-control" id="projectManagerId" name="projectManagerId">
+				</div>
+				<div style="padding-top: 10px;" >
+					<label for="typeofClaim" style="font-size:25px">Select The Type Of Claim </label> 
+					<select class="form-control" id="typeofClaim">
+						<option>Select Your Option</option>
+					   <option>Food Claim</option>
+					   <option>Travel Claim</option>
+					 </select>
+				</div> 
+					<div style="padding-top: 10px;">
+						<div class="row">
+						    <div class ="col">
+                                <label for="noPerson" style="font-size:25px" >Number Of Persons </label>
+					            <input type="number" class="form-control" id="noPerson" value="0" />
+					        </div>
+						    <div class="col">
+						        <label for="amount" style="font-size:25px" >Enter The Amount</label>
+						        <input type="number" class="form-control" id="amount"  name="amount">  
+						    </div> 
+						</div>
+						 <div style="padding-top: 10px;" id ="tagempIdDiv">
+						<div class="row">
+						    <div class ="col">
+                                
+					            <input type="text" class="form-control" id="tagempId" name = "tagempId" placeholder = "Enter The Employee ID" style="display: none" / >
+					        </div>
+						    <div class="col">
+						        
+						        <input type="textarea" class="form-control" id="tagPerson"  name="tagPerson" style="display: none" />  
+						    </div> 
+						</div>
+						   <div style="padding-top: 10px;">
+						   	<label for="invoiceFile" style="font-size:25px">Uplod Your Invoice</label>
+							<input type="file" class="form-control" id="invoiceFile" name="invoiceFile">
+						</div>
+						<div class="form-group"style="padding-top: 10px;" >
+						  <label for="comment" style="font-size:25px" >Comment:</label>
+						  <textarea class="form-control" rows="3" id="comment"></textarea>
+						</div>
+						<div class="form-group"style="padding-top: 10px; text-align: center;" >	
+						    <button type="submit" value="Submit" class="btn-lg">Submit</button> &nbsp; &nbsp;                  
+						    <button type="reset" value="Reset" class="btn-lg">Reset</button> 
+						</div>
+				</form>
+			</div>
+            	
+		</div>
+
+	
+	
+
+	<!-- Footer Starts -->
+	
+
+	</body>
+	<script src = "js/jquery-3.4.1.min.js"> </script>
+	<script src = "js/@popperjs/core/dist/umd/popper.min.js"> </script>
+	<script src = "js/bootstrap.min.js"> </script>
+	<script src = "fontawesome/js/all.js"> </script>
+	<script src = "js/script.js"> </script>
+	<script src = "noPerson.js"> </script>
+	
+</html>
