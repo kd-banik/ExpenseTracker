@@ -1,4 +1,3 @@
-	
 			body{
 				position: absolute;
 				padding: 0;
@@ -30,18 +29,18 @@
 				width: 100%;
 				background: #063671 ;
 				/* 	box-shadow: 10px 8px 16px 0px ; */
-				/*position: fixed;*/
-				/*top: 0;*/
+				/* position: absolute; */
+				/* top: 0; */
 				}
 
 			.footer {
 				height: 8%;
 				width: 100%;
 				background:  #063671;
-				box-shadow: 10px 8px 16px 0px ;
+				/* box-shadow: 10px 8px 16px 0px ; */
 				position: fixed;
-				left: 0;
 				bottom: 0;
+				text-align: right;
 				}
 
 			.brand{
@@ -138,9 +137,11 @@ header li{
 } */
 .table{
     display: table;
-	width: 86.50%;
+	width: 85%;
+	margin: auto;
+	margin-left: 210px;
 	padding: 5px;
-	/* position: ; */
+	position: fixed;
 }
 #table-caption{
     display: block;
@@ -164,7 +165,7 @@ header li{
     border-bottom: 1px solid black;
 }
 .table-body{
-    display: table-row-group;
+	display: table-row-group;
 }
 .table-row{
     display: table-row;
