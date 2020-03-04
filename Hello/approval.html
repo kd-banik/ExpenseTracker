@@ -77,57 +77,104 @@
   <!--table start-->
   <div class="content">
   <div id="claim">
-  <h2> Pending Claims</h2>
+  <h2> Approvals</h2>
   <table class="table table-striped">
   <tr class="bg-info">
     <th>Emp_Id</th>
-    <th>Title</th>
-    <th>Details</th>
+    <th>Employee Name</th>
+	<th>Type of Claim</th>
+    <th>Number <br>of Persons</th>
+	<th>Name of Persons</th>
+	<th>Invoice</th>
+	<th>Amount</th>
+    <th>Status</th>
+    <th>Update</th>
   </tr>
   <tr>
     <td>101</td>
-    <td>Ravi Kumar</td>
-    <td><a href="#">Detailing</a></td>
+    <td>Ravi Verma</td>
+	<td>Travel</td>
+	<td>3</td>
+	<td>R. Kumar, B. Das, R. Sen</td>
+	<td>File</td>
+	<td>5000</td>
+    <td><select id="Status">
+        <option value="pending">Pending</option>
+        <option value="approved">Approved</option>
+        <option value="rejected">Rejected</option>
+      </select>
+    </td>
+    <td><button class="btn btn-success">Update</button></td>
   </tr>
   <tr>
     <td>102</td>
-    <td>Kumar Jeevan</td>
-    <td><a href="#">Detailing</a></td>
+    <td>Mita Sen</td>
+	<td>Room Rent</td>
+	<td>2</td>
+	<td>K. Biswas, B. Das</td>
+	<td>File</td>
+	<td>7000</td>
+    <td><select id="Status">
+        <option value="pending">Pending</option>
+        <option value="approved">Approved</option>
+        <option value="rejected">Rejected</option>
+      </select>
+    </td>
+    <td><button class="btn btn-success">Update</button></td>
   </tr>
-  <tr>
-    <td>103</td>
-    <td>Raju Srivastav</td>
-    <td><a href="#">Detailing</a></td>
+    <tr>
+    <td>101</td>
+    <td>Rishav Ganguly</td>
+	<td>Meal</td>
+	<td>1</td>
+	<td>R. Sen</td>
+	<td>File</td>
+	<td>1000</td>
+    <td><select id="Status">
+        <option value="pending">Pending</option>
+        <option value="approved">Approved</option>
+        <option value="rejected">Rejected</option>
+      </select>
+    </td>
+    <td><button class="btn btn-success">Update</button></td>
+  </tr>
+    <tr>
+    <td>101</td>
+    <td>Sourav Das</td>
+	<td>Travel</td>
+	<td>3</td>
+	<td>R. Kumar, B. Das, R. Sen</td>
+	<td>File</td>
+	<td>5000</td>
+    <td><select id="Status">
+        <option value="pending">Pending</option>
+        <option value="approved">Approved</option>
+        <option value="rejected">Rejected</option>
+      </select>
+    </td>
+    <td><button class="btn btn-success">Update</button></td>
+  </tr>
+    <tr>
+    <td>007</td>
+    <td>Akash Gupta</td>
+	<td>System</td>
+	<td>1</td>
+	<td>R. Kumar</td>
+	<td>File</td>
+	<td>2500</td>
+    <td><select id="Status">
+        <option value="pending">Pending</option>
+        <option value="approved">Approved</option>
+        <option value="rejected">Rejected</option>
+      </select>
+    </td>
+    <td><button class="btn btn-success">Update</button></td>
   </tr>
   </table>
+  <button class="buttonHistory" style="float: right;">Show more details</button>
   </div>
    
-  <div class="line"></div>
-  <div id="approval">
-  <h2> Pending Approval</h2>
-  <table class="table table-striped">
-    <tr class="bg-info">
-      <th>Emp_Id</th>
-      <th>Title</th>
-      <th>Details</th>
-    </tr>
-    <tr>
-      <td>101</td>
-      <td>Ravi Kumar</td>
-      <td><a href="#">Detailing</a></td>
-    </tr>
-    <tr>
-      <td>102</td>
-      <td>Kumar Jeevan</td>
-      <td><a href="#">Detailing</a></td>
-    </tr>
-    <tr>
-      <td>103</td>
-      <td>Raju Srivastav</td>
-      <td><a href="#">Detailing</a></td>
-    </tr>
-  </table>
-  </div>
+
   
   
   <div class="line"></div>

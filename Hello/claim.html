@@ -74,63 +74,65 @@
         
   </div>
   <!-- /#wrapper -->
-  <!--table start-->
-  <div class="content">
-  <div id="claim">
-  <h2> Pending Claims</h2>
-  <table class="table table-striped">
-  <tr class="bg-info">
-    <th>Emp_Id</th>
-    <th>Title</th>
-    <th>Details</th>
-  </tr>
-  <tr>
-    <td>101</td>
-    <td>Ravi Kumar</td>
-    <td><a href="#">Detailing</a></td>
-  </tr>
-  <tr>
-    <td>102</td>
-    <td>Kumar Jeevan</td>
-    <td><a href="#">Detailing</a></td>
-  </tr>
-  <tr>
-    <td>103</td>
-    <td>Raju Srivastav</td>
-    <td><a href="#">Detailing</a></td>
-  </tr>
-  </table>
-  </div>
-   
-  <div class="line"></div>
-  <div id="approval">
-  <h2> Pending Approval</h2>
-  <table class="table table-striped">
-    <tr class="bg-info">
-      <th>Emp_Id</th>
-      <th>Title</th>
-      <th>Details</th>
-    </tr>
-    <tr>
-      <td>101</td>
-      <td>Ravi Kumar</td>
-      <td><a href="#">Detailing</a></td>
-    </tr>
-    <tr>
-      <td>102</td>
-      <td>Kumar Jeevan</td>
-      <td><a href="#">Detailing</a></td>
-    </tr>
-    <tr>
-      <td>103</td>
-      <td>Raju Srivastav</td>
-      <td><a href="#">Detailing</a></td>
-    </tr>
-  </table>
-  </div>
-  
-  
-  <div class="line"></div>
+  <div class ="row">
+    <div class = container style=" padding-top: 10px; padding-right: 100px;width: 75rem;color:blue;margin-left: 5rem;">
+     <h2 align = "center"> Enter The Claim Details </h2>
+    </div>
+    <div class = container style=" padding-bottom: 10rem; padding-right: 100px; width: 75rem;margin-left: 5rem;">
+        <form>
+            <div style="padding-top: 10px;">
+            <label for="empId" style="font-size:15px">Employee ID </label>
+            <input type="text" class="form-control" id="empId" name="empId"> 
+        </div>
+           <div style="padding-top: 10px;">
+               <label for="projectManagerId" style="font-size:15px">Project Manager ID </label>
+            <input type="text" class="form-control" id="projectManagerId" name="projectManagerId">
+        </div>
+        <div style="padding-top: 10px;" >
+            <label for="typeofClaim" style="font-size:15px">Select The Type Of Claim</label> 
+            <select class="form-control" id="typeofClaim">
+                <option>Select Your Option</option>
+               <option>Food Claim</option>
+               <option>Travel Claim</option>
+             </select>
+        </div> 
+        <div style="padding-top: 10px;">
+          <div class="row">
+              <div class ="col">
+                              <label for="noPerson" style="font-size:15px" >Number Of Persons </label>
+                    <input type="number" class="form-control" id="noPerson" value="0" />
+                </div>
+              <div class="col">
+                  <label for="amount" style="font-size:15px" >Total Amount</label>
+                  <input type="number" class="form-control" id="amount"  name="amount">  
+              </div> 
+          </div>
+           <div style="padding-top: 10px;" id ="tagempIdDiv">
+          <div class="row">
+              <div class ="col">
+                              
+                    <input type="text" class="form-control" id="tagempId" name = "tagempId" placeholder = "Enter The Employee ID" style="display: none" / >
+                </div>
+              <div class="col">
+                  
+                  <input type="textarea" class="form-control" id="tagPerson"  name="tagPerson" style="display: none" />  
+              </div> 
+          </div>
+             <div style="padding-top: 10px;">
+               <label for="invoiceFile" style="font-size:15px">Upload Your Invoice</label>
+            <input type="file" class="form-control" id="invoiceFile" name="invoiceFile">
+          </div>
+          <div class="form-group"style="padding-top: 10px;" >
+            <label for="comment" style="font-size:15px" >Comment:</label>
+            <textarea class="form-control" rows="3" id="comment"></textarea>
+          </div>
+          <div class="form-group"style="padding-top: 10px; text-align: center;" >	
+              <button type="submit" value="Submit" class="btn-primary btn-lg">Submit</button> &nbsp; &nbsp;                  
+              <button type="reset" value="Reset" class="btn-warning btn-lg">Reset</button> 
+          </div>
+        </form>
+    </div>
+        
 </div>
   <!-- Footer Starts -->
 <footer>
@@ -141,7 +143,7 @@
 						
 							<img class="brandf" src="oti.jpg">
 
-                    <div class="" style="">
+                    <div >
                      <center>Headquarters: Godrej Waterside, Tower 1, 9th Floor, Sector V, Salt Lake City, West Bengal-700091, India&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                      Copyright &copy; 2018 &nbsp;|&nbsp;
                      <a href="#contact.php">Contact Us</a></center>
@@ -163,7 +165,6 @@
       $("#wrapper").toggleClass("toggled");
     });
   </script>
-
 </body>
-
+<script src = "noPerson.js"> </script>
 </html>
