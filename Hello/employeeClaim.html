@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <title>Employee Claim</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <!-- <script type="text/javascript" src="index.js"></script> -->
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="simple-sidebar.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .d-flex>#sidebar-wrapper>.list-group>a {
+      display: inline-block;
+      color: #7386D5;
+    }
+
+    .d-flex>#sidebar-wrapper>.list-group>.dropdown-menu>a {
+      color: #7386D5;
+    }
+  </style>
+</head>
+
+<body style="background-color:white;">
+  <div class="header" id="header">
+    <!--a class="brand" href="">Business Cards</a-->
+
+    <img class="brand" src="oti.jpg">
+    <a class="right" href="profile.html" style="height: 10px"><span class="far fa-bell"></span></a>
+    <a class="right" href="#"><span class="far fa-user"></span></a>
+  </div>
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-dark border-right" id="sidebar-wrapper">
+
+      <div class="list-group list-group-flush">
+        <a href="employeeIndex.html" class="list-group-item list-group-item-action bg-dark">Home</a>
+
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Claims
+        </a>
+        <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item bg-dark" href="employeeClaim.html">Claim Now</a>
+          <a class="dropdown-item bg-dark" href="employeePending.html">Pending</a>
+          <a class="dropdown-item bg-dark" href="employeeHistory.html">Approved</a>
+        </div>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+
+    <div id="page-content-wrapper">
+      <header class="navbar navbar-light">
+        <button class="navbar-toggler sidebar-toggler" id="menu-toggle" type="button" data-toggle="sidebar-show">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </header>
+
+
+
+
+    </div>
+    <!-- /#wrapper -->
+    <div class = "content">
+    <div class="row">
+      <div class=container style=" padding-top: 10px; padding-right: 100px;width: 75rem;color:blue;margin-left: 5rem;">
+        <h2 align="center"> Enter The Claim Details </h2>
+      </div>
+      <div class=container style=" padding-bottom: 10rem; padding-right: 100px; width: 75rem;margin-left: 5rem;">
+        <form id="claim-form">
+          <div style="padding-top: 10px;">
+            <label for="empId" style="font-size:15px">Employee ID </label>
+            <input type="text" class="form-control" id="empId" name="empId">
+            <div class="error">*Field Empty*</div>
+          </div>
+          <div style="padding-top: 10px;">
+            <label for="projectManagerId" style="font-size:15px">Project Manager ID </label>
+            <input type="text" class="form-control" id="projectManagerId" name="projectManagerId" value="">
+            <div class="error">*Field Empty*</div>
+          </div>
+          <div style="padding-top: 10px;">
+            <label for="typeofClaim" style="font-size:15px">Select The Type Of Claim</label>
+            <select class="form-control" id="typeofClaim">
+              <option value="">Select Your Option</option>
+              <option value="1">Food Claim</option>
+              <option value="2">Travel Claim</option>
+            </select>
+            <div class="error">*Field Empty*</div>
+          </div>
+          <div style="padding-top: 10px;">
+            <div class="row">
+              <div class="col">
+                <label for="noPerson" style="font-size:15px">Number Of Persons </label>
+                <input type="number" class="form-control" id="noPerson" min="0" value="0" />
+                <div class="error">*Field Empty*</div>
+              </div>
+              <div class="col">
+                <label for="amount" style="font-size:15px">Total Amount</label>
+                <input type="number" class="form-control" id="amount" name="amount">
+                <div class="error">*Field Empty*</div>
+              </div>
+            </div>
+            <div style="padding-top: 10px;" id="tagempIdDiv">
+              <div class="row">
+                <div class="col">
+
+                  <input type="text" class="form-control" id="tagempId" name="tagempId"
+                    placeholder="Enter The Employee ID" style="display: none" />
+                  <div class="error">*Field Empty*</div>
+                </div>
+                <div class="col">
+
+                  <input type="textarea" class="form-control" id="tagPerson" name="tagPerson" style="display: none" />
+                  <div class="error">*Field Empty*</div>
+                </div>
+              </div>
+              <div style="padding-top: 10px;">
+                <label for="invoiceFile" style="font-size:15px">Upload Your Invoice</label>
+                <input type="file" class="form-control" id="invoiceFile" name="invoiceFile">
+                <div class="error">*Field Empty*</div>
+              </div>
+              <div class="form-group" style="padding-top: 10px;">
+                <label for="comment" style="font-size:15px">Comment:</label>
+                <textarea class="form-control" rows="3" id="comment"></textarea>
+                <div class="error">*Field Empty*</div>
+              </div>
+              <div class="form-group" style="padding-top: 10px; text-align: center;">
+                <button type="submit" value="Submit" class="btn-primary btn-lg">Submit</button> &nbsp; &nbsp;
+                <button type="reset" value="Reset" class="btn-warning btn-lg" id="reset">Reset</button>
+              </div>
+        </form>
+      </div>
+
+    </div>
+    <!-- Footer Starts -->
+  </div>
+    
+  </div>
+  <footer>
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="flogo">
+
+            <img class="brandf" src="oti.jpg">
+
+            <div>
+              <center>Headquarters: Godrej Waterside, Tower 1, 9th Floor, Sector V, Salt Lake City, West
+                Bengal-700091, India&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Copyright &copy; 2018 &nbsp;|&nbsp;
+                <a href="#contact.php">Contact Us</a></center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="js/script.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+  $("#menu-toggle").click(function (e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+</script>
+<script src="noPerson.js"> </script>
+
+</html>
