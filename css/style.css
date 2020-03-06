@@ -43,3 +43,82 @@
 .menu-drop > .menu-drop-item{
     color: #727a82;
 }
+
+.btn {
+    display: inline-block;
+    padding: 3px 150px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+    .btn {
+    border: none;
+    background-color: #f8f9fa;
+    font-size: 20px;
+    color: #333;
+}
+body {
+    font-family: auto;
+    font-size:10px;
+    line-height: normal;
+    color: #333;
+    background-color: #fff;
+}
+ul>li {
+    display: inline-block;
+    padding: 20px;
+    font-size: medium;
+    list-style: none;
+    margin-right: 30px;
+
+}
+.open>.dropdown-menu {
+    display: grid;
+    
+}
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.closebtn {
+  padding-left: 10px;
+  color: #888;
+  font-weight: bold;
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: #000;
+}
