@@ -116,6 +116,19 @@ $(document).ready(function (){
         $("#invoiceFile").val("");
         $("#comment").val("");
     });
+
+
+    $("#login_submit").on("click",function(event){
+        event.preventDefault();
+        let id = $("#email_login").val();
+        let password = $("#password_login").val();
+        if(id === "employee@gmail.com" && password === "login@123"){
+            window.location.href ="employeeIndex.html" ;
+        }
+        else if(id === "pm@gmail.com" && password === "login@123"){
+            window.location.href = "pmIndex.html";
+        }
+    })
 });
 
 
