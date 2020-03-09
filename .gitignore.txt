@@ -1,0 +1,8 @@
+/exclude include.txt
+/exclude sample.js.txt
+/exclude /ignore/*
+/exclude /css/*
+/exclude dashBoard.html
+/exclude /fontawesome/*
+/exclude headerFooter.html
+/exclude /ignore
