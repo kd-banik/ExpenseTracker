@@ -5,4 +5,4 @@
 /exclude dashBoard.html
 /exclude /fontawesome/*
 /exclude headerFooter.html
-/exclude /ignore
+/exclude /ignore/*
