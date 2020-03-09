@@ -5,3 +5,4 @@
 /exclude dashBoard.html
 /exclude /fontawesome/*
 /exclude headerFooter.html
+/exclude /node_modules/*
