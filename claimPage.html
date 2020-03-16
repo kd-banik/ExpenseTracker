@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<title>Business Cards || Login</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+          
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css" />
+        <link rel = "stylesheet" type = "text/css" href = "css/index.css">
+		<script type="text/javascript" src="index.js"></script>
+		<link rel = "stylesheet" type = "text/css" href = "css/style.css">
+
+	</head>
+
+
+	<body style="background-color:grey;"  onload="load()">
+		
+		<div class="header" id="header">
+			<!--a class="brand" href="">Business Cards</a-->
+		
+			<img class="brand" src="oit.jpg">
+			<a class = "right" href = "#"><span class = "far fa-user"></span></a>
+			<a class = "right" href = "#"><span class = "far fa-bell"></span></a>
+			<!-- <img class="brandf left" src="i2.png">
+			<img class="brandf left" src="human.png"> -->
+		</div>
+		
+		<div class = "side-bar">
+			<ul class = "side-bar-content">
+				<li><a href = "#" class = "active">Home</a></li>
+				<li class = "claim-drop-down">
+						<a href = "#" >Claims</a>
+						<ul class = "menu-drop">
+							<li class = "menu-drop-item">History</li>
+							<li class = "menu-drop-item">New Claim</li>
+						</ul>
+				</li>
+				<!-- <li><a href = "#">Approval</a></li> -->
+				<li><a href = "#">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class ="row">
+			<div class = container style="padding-top: 20px;">
+			 <h2 align = "center"> Enter The Claim Details </h2>
+			</div>
+			<div class = container style="padding-left: 150px; padding-top: 10px; padding-right: 150px">
+				<form class = "p-3">
+					<div style="padding-top: 10px;">
+					<label for="empId" style="font-size:25px">Employee ID </label>
+					<input type="text" class="form-control" id="empId" name="empId"> 
+				</div>
+				   <div style="padding-top: 10px;">
+				   	<label for="projectManagerId" style="font-size:25px">Project Manager ID </label>
+					<input type="text" class="form-control" id="projectManagerId" name="projectManagerId">
+					
+				</div>
+				<div style="padding-top: 10px;" >
+					<label for="typeofClaim" style="font-size:25px">Select The Type Of Claim </label> 
+					<select class="form-control" id="typeofClaim">
+						<option value="" disabled selected>Select Your Option</option>
+					   <option value="Food Claim">Food Claim</option>
+					   <option value="Travel Claim">Travel Claim</option>
+					 </select>
+				</div> 
+					 <div style="padding-top: 15px;" id ="tagempIdDiv" >
+						<div class = "row">
+							<div class = "col">
+					
+					     <select    id="filtering" multiple="multiple" style='size:4'  >
+				    		 <option value="Kushal">emp101</option>
+				    		 <option value="Debapriya">emp102</option>
+				   			 <option value="Saransh">emp103</option>
+				    		 <option value="Kunal">emp104</option>
+				    		 <option value="soumick">emp105</option>
+				    		 <option value="Bishal">emp205</option>
+				    		 <option value="Aritra">emp305</option>
+				    		 <option value="Pragnananda">emp405</option>
+				    		 <option value="xyz">emp505</option>
+				    		 <option value="zxy">emp605</option>
+				    		 <option value="yxz">emp705</option>
+				    		 <option value="Abc">emp805</option>
+						</select>
+						</div>
+						<div class = "col">
+					
+					 
+						        
+					     <div  id =tagPerson style="padding-bottom: 10px;" >
+						 </div> 
+					 
+					</div>
+				</div>
+					 </div>
+				
+				
+					<div style="padding-top: 10px;">
+						
+						 <label for="amount" style="font-size:25px" >Enter The Amount</label>
+						 <input type="number" class="form-control" id="amount"  name="amount">  
+				    </div> 
+					
+						
+					
+						   <div style="padding-top: 10px;">
+						   	<label for="invoiceFile" style="font-size:25px">Uplod Your Invoice</label>
+							<input type="file" class="form-control" id="invoiceFile" name="invoiceFile">
+						</div>
+						<div class="form-group"style="padding-top: 10px;" >
+						  <label for="comment" style="font-size:25px" >Comment:</label>
+						  <textarea class="form-control" rows="3" id="comment"></textarea>
+						</div>
+						
+						<div class="form-group"style="padding-top: 10px; text-align: center;" >	
+						    <button type="submit" value="Submit" class="btn-lg">Submit</button> &nbsp; &nbsp;                  
+						    <button type="reset" value="Reset" class="btn-lg">Reset</button> 
+						</div>
+				</form>
+			</div>
+            	
+		</div>
+
+	
+	
+
+	<!-- Footer Starts -->
+	
+
+	</body>
+	
+	
+	<script src = "js/script.js"> </script>
+	<script src = "noPerson.js"> </script>
+	<script src = "controller.js"> </script>
+	<script type="text/javascript">
+   
+</script>
+
+	
+</html>
