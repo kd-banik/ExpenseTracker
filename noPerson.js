@@ -1,11 +1,9 @@
 
 $(document).ready(function () {
-    $('#noPerson').change(function (){
-    if($(this).val() > 0){
-        $('#tagempIdDiv').show();
          $(function () {
         $('#filtering').multiselect({
            nonSelectedText: 'Select',
+           optionLength : 4,
 
            enableFiltering: true,
            filterBehavior: 'text',
@@ -20,16 +18,9 @@ $(document).ready(function () {
 
         });
     });
-      
-        
-    } else {
-    
-        $('#tagempIdDiv').hide();
-        
-   }
-    });
-});
-
-
-
+//     const l = document.getElementById("filtering")
+//   l.setAttribute()
+        //document.getElementById("multiselect dropdown-toggle btn btn-default").setAttribute("size", 4);
+  		
+         });
 
