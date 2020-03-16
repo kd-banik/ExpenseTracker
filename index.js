@@ -29,6 +29,17 @@ function load () {
 		}
 		
 	}
+	            function Validate() {
+     			   	var password = document.getElementById("password").value;
+   				    var confirmpassword = document.getElementById("password1").value;
+        			if (password != confirmpassword) {
+           			alert("Passwords do not match.");
+            		return false;
+        			}else{
+        			return true;
+        				}
+					}
+
 	function validation()
 	{
 		
@@ -44,5 +55,6 @@ function load () {
 			}
 		}
 	}
-
+	
+  
 

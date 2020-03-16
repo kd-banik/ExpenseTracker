@@ -1,11 +1,11 @@
 <html>
 	<head>
-		<title>Business Cards || Login</title>
+		<title>Expense Tracker|| Login</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
 		
   				<meta name="viewport" content="width=device-width, initial-scale=1.0">
   				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
- 
+                
 	</head>
 
 
@@ -29,8 +29,8 @@
 					<p style="color:red;" id="error"><br><br><br></p>
 					
 					<div class="row">
-					<label for="password"  class="col-md-6">Password&nbsp;&nbsp;&nbsp;</label>
-					<input type="text"  class="box col-md-6" name="password" id="password" value=""placeholder="Password"><br><br><br>
+					<label for="logpassword"  class="col-md-6">Password&nbsp;&nbsp;&nbsp;</label>
+					<input type="text"  class="box col-md-6" name="logpassword" id="logpassword" placeholder="Password"><br><br><br>
  						</div>
 					<!--input class="button" type="button" value="Register &nbsp;" onclick="register()"-->
 
@@ -41,51 +41,57 @@
 
 
 			<center>
+				
 				<b><div class="boxx"  id="register">
 				
-				<form method="POST" action="index.html">
+				<form method="POST" action="/submit">
 				
 				<div class="row">
 				<label  for="fname" class="col-md-6">First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-				<input class="box col-md-6"  type="text" name="fname" id="fname" value="" placeholder="First Name"><br><br><br>
+				<input class="box col-md-6"  type="text" name="fname" id="fname"  placeholder="First Name"><br><br><br>
 				</div>
 
 				<div class="row">	
 				<label class="col-md-6" for="lname">Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-				<input class="box col-md-6" type="text" name="lname" id="lname" value=""placeholder="Last Name"><br><br><br>
+				<input class="box col-md-6" type="text" name="lname" id="lname" placeholder="Last Name"><br><br><br>
 				</div>
 
 				<div class="row">
 				<label for="email" class="col-md-6">Email ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-				<input class="box col-md-6" type="email" name="email" id="email" value=""placeholder="Email ID"><br><br><br>
+				<input class="box col-md-6" type="email" name="email" id="email" placeholder="Email ID"><br><br><br>
 				</div>
 
 			    <div class="row">
 			    <label for="degisnation" class="col-md-6">Designation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-				<input class="box col-md-6" type="text" name="degisnation" id="degisnation" value=""placeholder="Designation"><br><br><br>
+				<input class="box col-md-6" type="text" name="degisnation" id="degisnation" placeholder="Designation"><br><br><br>
 				</div>
 
                 <div class="row">
                  <label for="department" class="col-md-6">Department&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-				<input class="box col-md-6" type="text" name="department" id="department" value=""placeholder="Department"><br><br><br>
+				<input class="box col-md-6" type="text" name="department" id="department" placeholder="Department"><br><br><br>
+				</div>
+
+				  <div class="row">
+                 <label for="emp_id" class="col-md-6">Employee Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input class="box col-md-6" type="text" name="department" id="department" placeholder="Employee ID"><br><br><br>
 				</div>
 
 				<div class="row">
 				<label  for="password" class="col-md-6">Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-				<input class="box col-md-6" type="text" name="password" id="password" value=""placeholder="Password"><br><br><br>
+				<input class="box col-md-6" type="password" name="password" id="password" placeholder="Password"><br><br><br>
 				</div>
                
                 <div class="row">
                 <label for="password1" class="col-md-6">Confirm Password&nbsp;</label>
-				<input class="box col-md-6" type="text" name="password1" id="password1" value=""placeholder="Confirm Password"><br><br><br>	
+				<input class="box col-md-6" type="password" name="password1" id="password1"  placeholder="Confirm Password">
+				 <br><br><br>	
 				</div>
-				
-				<input class="button" type="submit" value="REGISTER" style="background-color: #11DE0E "><br><br>
-				<a href="#" onclick="login()">Already Registered? Login</a>
+			
+									
+				<input class="button" type="submit" onclick="Validate();" value="REGISTER" style="background-color: #11DE0E "><br><br>
+				<a href="#" onclick="login();">Already Registered? Login</a>
 				</form>
 			</div></b></center>
-
-
 		</div>
 	
 
@@ -100,7 +106,7 @@
                     <div class="" style="padding-top: 10px">
                      <center>Headquarters: Godrej Waterside, Tower 1, 9th Floor, Sector V, Salt Lake City, West Bengal-700091, India&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                      Copyright &copy; 2018 &nbsp;|&nbsp;
-                     <a href="#contact.php">Contact Us</a></center>
+                     <a href="#">Contact Us</a></center>
                     </div>				
                 </div>
 		  	</div>
@@ -108,7 +114,8 @@
 	</div>
 
 	</body>
-<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript" src="demo_db_connection.js"></script>
+		<script type="text/javascript" src="index.js"></script>
        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    
