@@ -24,13 +24,16 @@
     </header>
     <div class = "container">
         <h1 class = "text-center">Create Blog</h1>
-        <div class = "row"><div class = "col-md-12"><label for="blog-title">Blog Title</label><input id = "blog-title" class = "form-control" type="text" name = "blog-title" value = ""></div></div>
+        <div class = "row"><div class = "col-md-12"><label for="blog-title">Blog Title</label><input id = "blog-title" class = "form-control" type="text" name = "blog-title" value = "" required><label class = "blog-title-error error-text"></label></div></div>
+        <div class = "row"><div class = "col-md-12"><label for = "blog-slug">Blog Slug</label><input id = "blog-slug" class = "form-control" type = "text" value = "" maxlength="25"><button id = "blog-slug-check" class = "btn btn-xs blog-slug-check text-color-ghostwhite bg-oit-green">Check Slug</button><label class = "blog-slug-error error-text"></label></div></div>
+        <div class = "row"><div class = "col-md-12"><label for="blog-short-description">Blog Short Description</label><textarea id = "blog-short-description" class = "form-control"></textarea><label class = "blog-short-description-error error-text"></label></div></div>
         <div class = "row"><div class = "col-md-12">
-            <label for = "editor">Blog Description</label>
-            <textarea id = "editor">
+            <label for = "blog_editor">Blog Detail</label>
+            <textarea id = "blog_editor">
             </textarea>
+            <label class = "blog_editor_error error-text"></label>
         </div></div>
-        <button id = "submit-blog" class = "btn btn-md bg-oit-blue text-color-ghostwhite">Post</button>
+        <button id = "submit-blog" class = "btn btn-md bg-oit-green text-color-ghostwhite">Post</button>
     </div>
     <footer class = "footer dark-blue">
         <div class = container>
@@ -42,7 +45,7 @@
     <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src ="ckeditor/ckeditor.js"></script>
     <script>
-        CKEDITOR.replace("editor");
+        CKEDITOR.replace("blog_editor");
     </script>
     <script src = "js/script.js"></script>
 
