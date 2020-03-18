@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <title>Employee history</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script type="text/javascript" src="index.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="simple-sidebar.css" rel="stylesheet">
+  <style>
+    .d-flex > #sidebar-wrapper > .list-group > a{
+      display: inline-block;
+      color:#7386D5;
+    }
+    
+    .d-flex > #sidebar-wrapper > .list-group > .dropdown-menu > a{
+      color:#7386D5;  }
+  </style>
+</head>
+
+<body style="background-color:white;"  onload="load()">
+  <div class="header" id="header">
+    <!--a class="brand" href="">Business Cards</a-->
+  
+    <img class="brand" src="oti.jpg">
+    <a class = "right" href = "profile.html" style="height: 10px"><span class = "far fa-bell"></span></a>
+			<a class = "right" href = "profile.html"><span class = "far fa-user"></span></a>
+  </div>
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-dark border-right" id="sidebar-wrapper">
+      
+      <div class="list-group list-group-flush">
+        <a href="employeeIndex.html" class="list-group-item list-group-item-action bg-dark">Home</a>
+        
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Claims
+        </a>
+        <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item bg-dark" href="employeeClaim.html">Claim Now</a>
+          <a class="dropdown-item bg-dark" href="employeePending.html">Pending</a>
+          <a class="dropdown-item bg-dark" href="employeeHistory.html">Approved</a>
+        </div>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    
+    <div id="page-content-wrapper">
+      <header class="navbar navbar-light">
+        <button class="navbar-toggler sidebar-toggler" id="menu-toggle" type="button" data-toggle="sidebar-show">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </header> 
+      
+      
+
+        
+  </div>
+  <!-- /#wrapper -->
+  <!--table start-->
+  <div class="content">
+  <div id="claim">
+  <h2> Claims History</h2>
+  <table class="table table-striped">
+  <tr class="bg-info">
+    <th>Emp_Id</th>
+    <th>Manager_Id</th>
+	<th>Type of Claim</th>
+    <th>Number <br>of Persons</th>
+	<th>Amount</th>
+	<th>Invoice</th>
+	<th>Status</th>
+	<th>Details</th>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>M101</td>
+	<td>Travel</td>
+	<td>3</td>
+	<td>2000</td>
+	<td>File</td>
+	<td>Approved</td>
+    <td><a href="#">Details</a></td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td>M102</td>
+	<td>Room Rent</td>
+	<td>2</td>
+	<td>3500</td>
+	<td>File</td>
+	<td>Approved</td>
+    <td><a href="#">Details</a></td>
+  </tr>
+    <tr>
+    <td>101</td>
+    <td>M101</td>
+	<td>Meal</td>
+	<td>1</td>
+	<td>700</td>
+	<td>File</td>
+	<td>Not Approved</td>
+    <td><a href="#">Details</a></td>
+  </tr>
+    <tr>
+    <td>101</td>
+    <td>M101</td>
+	<td>Travel</td>
+	<td>3</td>
+	<td>2000</td>
+	<td>File</td>
+	<td>Approved</td>
+    <td><a href="#">Details</a></td>
+  </tr>
+    <tr>
+    <td>007</td>
+    <td>M786</td>
+	<td>System</td>
+	<td>1</td>
+	<td>25000</td>
+	<td>File</td>
+	<td>Approved</td>
+    <td><a href="#">Details</a></td>
+  </tr>
+  </table>
+  <button class="buttonHistory" style="float: right;">Show more details</button>
+  </div>
+   
+
+  
+  
+  <div class="line"></div>
+</div>
+</div>
+<footer>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="flogo">
+
+          <img class="brandf" src="oti.jpg">
+
+          <div>
+            <center>Headquarters: Godrej Waterside, Tower 1, 9th Floor, Sector V, Salt Lake City, West
+              Bengal-700091, India&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Copyright &copy; 2018 &nbsp;|&nbsp;
+              <a href="#contact.php">Contact Us</a></center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- Footer Starts -->
+<!-- <footer>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="flogo">
+						
+							<img class="brandf" src="oti.jpg">
+
+                    <div class="" style="">
+                     <center>Headquarters: Godrej Waterside, Tower 1, 9th Floor, Sector V, Salt Lake City, West Bengal-700091, India&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     Copyright &copy; 2018 &nbsp;|&nbsp;
+                     <a href="#contact.php">Contact Us</a></center>
+                    </div>				
+                </div>
+		  	</div>
+		</div>
+	</div>
+</footer> -->
+</body>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<!-- Menu Toggle Script -->
+<script>
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+</script>
+</html>
