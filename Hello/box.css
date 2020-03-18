@@ -1,0 +1,38 @@
+    .BoxContainer { 
+        width:600px; 
+        height:190px; 
+        background-color:rgb(69, 238, 69); 
+        padding-top:20px; 
+        padding-left:15px; 
+        padding-right:15px; 
+    } 
+    #st-box { 
+        float:left; 
+        width:180px; 
+        height:160px; 
+        background-color:white; 
+        border:solid rgb(37, 160, 241); 
+    } 
+    #nd-box { 
+        float:left; 
+        width:180px; 
+        height:160px; 
+        background-color:white; 
+        border:solid rgb(37, 160, 241); 
+        margin-left:20px; 
+    } 
+    #rd-box { 
+        float:right; 
+        width:180px; 
+        height:160px; 
+        background-color:white; 
+        border:solid rgb(37, 160, 241); 
+    } 
+    h1 { 
+        color:Green; 
+    } 
+    h3{
+        color: teal;
+    }
+    
+ 
