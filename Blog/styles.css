@@ -1,0 +1,31 @@
+.container-fluid{
+    padding: 15px;
+    background-color: rebeccapurple;
+}
+.head_1{
+    font-size: xx-large;
+    color: aliceblue;
+    padding-left: 20px;
+}
+.container{
+  margin-top: 10px;
+    background-color: beige;
+}
+.head_2{
+    font-size: x-large;
+    color: darkorange;
+    padding: 5px;
+    position: top;
+}
+.para_1{    
+    font-size: large;
+    color: rgb(97, 90, 145) ;
+    padding: 10px;
+    word-spacing: 0.5em;
+    font-weight: 500;
+}
+.head_3{
+    font-size: large;
+    padding: 3px;
+    color: aliceblue;
+}
