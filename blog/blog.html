@@ -9,7 +9,7 @@
     <link rel = "stylesheet" href= "css/style.css">
 </head>
 
-<body class = main-body>
+<body class = "main-body blog-dashboard-body">
     <header>
         <nav class = "navbar bg-dark dark-blue">
             <ul class = "navbar-nav">
@@ -24,7 +24,7 @@
     </header>
     <div class = "container bg-oit-ghost blog-content">
         <h1 class ="text-center" >Welcome to OIT Blogs</h1>
-        <div class = "row">
+        <!-- <div class = "row">
             <div class = "col-md-4">
                 <div class = "card">
                     <div class = "card-body">
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </div>
     <footer class = "footer dark-blue">
@@ -113,5 +113,51 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src = "js/script.js"></script>
+<script>
+    $(document).ready(function(event){
+        $.ajax({
+            contentType: "application/json",
+            method: "GET",
+            url: "http://localhost:3000/blog/get/",
+            success: function(result,status,xhr){
+                console.log("success");
+                console.log(status);
+                console.log(JSON.parse(result));
+                loadBlog(JSON.parse(result))
+            },
+            error: function(xhr,status,error){
+
+                console.log("error");
+                console.log(status);
+                console.log(error);
+            }
+        });
+    });    
+function loadBlog(blogJson){
+    console.log(blogJson);
+    console.log(blogJson.length);
+    let rows  = parseInt(blogJson.length / 3) ;
+    rows += (blogJson.length % 3 == 0)? 0 : 1;
+    console.log("rows "+rows);
+    let html = '';
+    let blogCount = 0;
+    for(let count = 1 ; count <= rows ; count++){
+        html += '<div class = "row">';
+                for(let column = 1 ; column <= 3 && blogCount < blogJson.length ; column++,blogCount++){
+                    console.log("Title " + blogJson[blogCount].title_blog);
+                    console.log("desc " + blogJson[blogCount].brief_blog);
+                    html += '<div class = "col-md-4">';
+                    html += '<div class = "card">';
+                    html +='<div class = "card-body">';
+                    html += '<div class = "card-body">';
+                    html += '<h4 class = "card-title">'+blogJson[blogCount].title_blog+'</h4>'
+                    html += '<p class = "card-text">'+blogJson[blogCount].brief_blog+'</p>';
+                    html += '<button class = "btn bg-oit-green text-color-ghostwhite">Read More..</button></div></div></div></div>';
+                }
+        html += '</div>';
+    }
+    $(".blog-content").append(html);
+}
+</script>
 
 </html>

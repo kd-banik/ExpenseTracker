@@ -9,7 +9,7 @@
     <link rel = "stylesheet" href= "css/style.css">
 </head>
 
-<body class = main-body>
+<body class = "main-body">
     <header>
         <nav class = "navbar bg-dark dark-blue">
             <ul class = "navbar-nav">
@@ -25,8 +25,8 @@
     <div class = "container">
         <h1 class = "text-center">Create Blog</h1>
         <div class = "row"><div class = "col-md-12"><label for="blog-title">Blog Title</label><input id = "blog-title" class = "form-control" type="text" name = "blog-title" value = "" required><label class = "blog-title-error error-text"></label></div></div>
-        <div class = "row"><div class = "col-md-12"><label for = "blog-slug">Blog Slug</label><input id = "blog-slug" class = "form-control" type = "text" value = "" maxlength="25"><button id = "blog-slug-check" class = "btn btn-xs blog-slug-check text-color-ghostwhite bg-oit-green">Check Slug</button><label class = "blog-slug-error error-text"></label></div></div>
-        <div class = "row"><div class = "col-md-12"><label for="blog-short-description">Blog Short Description</label><textarea id = "blog-short-description" class = "form-control"></textarea><label class = "blog-short-description-error error-text"></label></div></div>
+        <div class = "row"><div class = "col-md-12"><input id = "blog-slug" class = "form-control" type = "hidden" value = "" maxlength="25"><label class = "blog-slug-error error-text"></label></div></div>
+        <div class = "row"><div class = "col-md-12"><label for="blog-short-description">Blog Short Description</label><textarea id = "blog-short-description" class = "form-control" maxlength="180"></textarea><label class = "blog-short-description-error error-text"></label></div></div>
         <div class = "row"><div class = "col-md-12">
             <label for = "blog_editor">Blog Detail</label>
             <textarea id = "blog_editor">

@@ -1,25 +1,47 @@
 $(document).ready(function (event){
 
-    $("#blog-title").on("keyup",function(event){
+    $("#blog-title").on("blur",function(event){
         event.preventDefault();
+        console.log("Blur called");
         let blogTitleSplit =  $("#blog-title").val().split(" ");
-        // console.log(blogTitleSplit);
+    
         let blogSlug = "";
         for(let index = 0 ;index < 3 && index < blogTitleSplit.length ; index++){
-            //console.log(blogTitleSplit[index]);
+    
             
             blogSlug += (index > 0)? "-"+blogTitleSplit[index] : blogTitleSplit[index];
             
         }
-        if(blogSlug.trim().length <= 25){
-
-            $("#blog-slug").val(blogSlug);
+        if(blogSlug.trim().length > 25){
+            blogSlug = blogSlug.slice(0,24);
+            //$("#blog-slug").val(blogSlug);
         }
+        $.ajax({
+            contentType: "application/json",
+            method: "POST",
+            url: "http://localhost:3000/blog/slug/",
+            data: JSON.stringify({
+                slug: blogSlug
+            }),
+            success: function(result,status,xhr){
+                console.log("Success");
+                console.log(status);
+                console.log(result);
+                let jsonCountSlug = JSON.parse(result);
+                console.log(jsonCountSlug)
+                $("#blog-slug").val(blogSlug+"-"+jsonCountSlug[0].count_slug);
+            },
+            error: function(xhr,status,error){
+                console.log("error");
+                console.log(status);
+                console.log(error);
+            }
+        })
+        console.log(blogSlug);
     });
+
     $("#submit-blog").on("click",function(event){
         event.preventDefault();
-        // let data = CKEDITOR.instances.editor.getData();
-        // console.log(data);
         let blogTitle = $("#blog-title").val();
         let blogSlug = $("#blog-slug").val();
         let blogShortDescription = $("#blog-short-description").val();
@@ -82,4 +104,9 @@ $(document).ready(function (event){
         });
         console.log(blogData);
     });
+
+    // $(".blog-dashboard-body").on("load",function(event){
+    //     event.preventDefault();
+    //     console.log("Body Loading");
+    // });
 });
