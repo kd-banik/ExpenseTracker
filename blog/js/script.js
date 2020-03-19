@@ -6,7 +6,7 @@ $(document).ready(function (event){
         // console.log(blogTitleSplit);
         let blogSlug = "";
         for(let index = 0 ;index < 3 && index < blogTitleSplit.length ; index++){
-            console.log(blogTitleSplit[index]);
+            //console.log(blogTitleSplit[index]);
             
             blogSlug += (index > 0)? "-"+blogTitleSplit[index] : blogTitleSplit[index];
             
@@ -58,7 +58,28 @@ $(document).ready(function (event){
             blog_short_description: blogShortDescription,
             blog_content: blogContent
         }
-
+        $(event.target).html("Posting...");
+        $.ajax({
+            contentType: "application/json",
+            method: "POST",
+            url : "http://localhost:3000/blog/submit/",
+            data: JSON.stringify(blogData),
+            success: function(result,status,xhr){
+                console.log("success");
+                console.log(status);
+                console.log(result);
+                $(event.target).html("Post");
+                $("#blog-title").val("");
+                $("#blog-slug").val("");
+                $("#blog-short-description").val("");
+                CKEDITOR.instances.blog_editor.setData("");
+            },
+            error: function(xhr,status,error){
+                console.log("error");
+                console.log(error);
+                console.log(status);
+            }
+        });
         console.log(blogData);
     });
 });
