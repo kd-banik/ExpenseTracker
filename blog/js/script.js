@@ -104,9 +104,4 @@ $(document).ready(function (event){
         });
         console.log(blogData);
     });
-
-    // $(".blog-dashboard-body").on("load",function(event){
-    //     event.preventDefault();
-    //     console.log("Body Loading");
-    // });
 });
