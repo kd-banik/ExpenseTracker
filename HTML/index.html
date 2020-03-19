@@ -1,0 +1,155 @@
+<html>
+	<head>
+		<title>Expence Tracker || Login</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ 		<!-- <script type="text/javascript" src="../server.js"></script> -->
+	</head>
+
+
+	<body style="background: linear-gradient(to right, #0000ff 0%, #ffcccc 100%); "  onload="load()">
+		
+		<div class="header" id="header">
+			<img class="brand" src="oti.jpg">
+			<a class = "right" href = "#" style="height: 10px"><span class = "far fa-bell"></span></a>
+			<a class = "right" href = "#"><span class = "far fa-user" data-toggle="modal" data-target="#myModal"></span></a>
+		</div>
+<!----------------------- Modal for User Profile------------------------------------------------->
+			  <div class="modal fade" id="myModal" role="dialog">
+			    <div class="modal-dialog">
+			    
+			      <!-- Modal content-->
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4 class="modal-title">Your Profile</h4>
+			        </div>
+			        <div class="modal-body">
+			          <p></p>
+			        </div>
+			        <div class="modal-footer">
+			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        </div>
+			      </div> 
+			    </div>
+			  </div>
+<!-----------------------------------------End of Modal---------------------------------------------------------->
+		<div class="outer" id="outer">
+		
+			<center><b><div class="boxx" id="login">
+				
+				<form method="" action="">
+					
+					<div class="row">
+					<label for="e_mail"  class="col-md-6">Email ID&nbsp;&nbsp;&nbsp;</label>
+					<input  type="email" class="box col-md-6" name="e_mail" id="e_mail" placeholder="Email ID" pattern="[a-zA-Z0-9]{2,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}"
+					required onkeyup="validation()" ><br></div>
+					<p style="color:red;" id="error"><br><br><br></p>
+					
+					<div class="row">
+					<label for="pword"  class="col-md-6">Password&nbsp;&nbsp;&nbsp;</label>
+					<input type="text"  class="box col-md-6" name="pword" id="pword" pattern=".{8,}" required placeholder="Password"><br><br><br>
+ 						</div>
+
+					<input type="button" id="login" class="button"  value="LOGIN" style=" background-color: #11DE0E" ><br><br>
+					<a href="#" onclick="register()">Not registered? Create an account</a> 
+				</form>
+			</div></b></center>
+
+
+			<center>
+				
+				
+				<form name="form1">
+				<b><div class="boxx"  id="register">
+				<div class="row">
+				<label  for="fname" class="col-md-6" >First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input class="box col-md-6"  type="text" name="fname" id="fname" pattern= "[a-zA-Z]{2,}" required placeholder="First Name"><br><br><br>
+				</div>
+
+				<div class="row">	
+				<label class="col-md-6" for="lname">Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input class="box col-md-6" type="text" name="lname" id="lname" pattern= "[a-zA-Z]{2,}" required placeholder="Last Name"><br><br><br>
+				</div>
+
+				<div class="row">
+				<label for="email"  class="col-md-6">Email ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input class="box col-md-6" type="email" name="email" id="email" pattern="[a-zA-Z0-9]{2,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" required placeholder="Email ID"><br><br><br>
+				</div>
+
+			    <div class="row">
+			    <label for="degisnation" class="col-md-6">Designation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<!-- <input class="box col-md-6" type="text" name="degisnation" id="degisnation" placeholder="Designation"> -->
+				<select class="box col-md-6" type="text" name="designation" id="designation" placeholder="Designation">
+					<option value="0" name="Developer">Developer</option>
+					<option value="1" name="System Engineer">System Engineer</option>
+					<option value="2" name="Project Manager">Project Manager</option>
+					<option value="3" name="Business Analyst">Business Analyst</option>
+				</select><br><br><br>
+				</div>
+
+                <!-- <div class="row">
+                 <label for="department" class="col-md-6">Department&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input class="box col-md-6" type="text" name="department" id="department" placeholder="Department"><br><br><br>
+				</div> -->
+
+				<div class="row">
+                 <label for="empID" class="col-md-6">Employee ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input class="box col-md-6" type="text" name="empID" id="empID" pattern= "[a-zA-Z0-9]{6,}" required placeholder="Employee ID"><br><br><br>
+				</div>
+
+				<div class="row">
+				<label  for="password" class="col-md-6">Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input class="box col-md-6" type="password" name="password" id="password" pattern=".{8,}" required placeholder="Password"><br><br><br>
+				</div>
+               
+                <div class="row">
+                <label for="password1" class="col-md-6">Confirm Password&nbsp;</label>
+				<input class="box col-md-6" type="password" name="password1" id="password1" pattern=".{8,}" required onkeyup="Validate()" placeholder="Confirm Password"><p id="pp" style="display: none; text-align: right;">Password is'nt matching</p><br>
+				<br><br>	
+				</div>
+				
+				<input class="button" type="button" id="submit" value="REGISTER" onclick="ajaxcall();" style="background-color: #11DE0E "><br><br>
+				<a href="#" onclick="login();">Already Registered? Login</a>
+				</div></form>
+			</b></center>
+			
+		</div>
+	
+
+	<!-- Footer Starts -->
+<div class="foot">
+		<div class="container">
+			<div class="row">
+				<div class="flogo">
+						
+							<img class="brandf" src="oti.jpg">
+
+                    <div class="" style="margin-bottom: 25px">
+                     <center>Headquarters: Godrej Waterside, Tower 1, 9th Floor, Sector V, Salt Lake City, West Bengal-700091, India&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     Copyright &copy; 2018
+                     <a href="#">Contact Us</a></center>
+                    </div>				
+                </div>
+		  	</div>
+		</div>
+	</div>
+
+	</body>
+	<script 
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+			></script>
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="index.js"></script>
+       <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+       </html>

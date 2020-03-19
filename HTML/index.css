@@ -1,25 +1,3 @@
-<<<<<<< Updated upstream
-	/* Starting of index page css*/
-			/*body{
-				position: absolute;
-				padding: 0;
-				margin: 0;
-				width: 100%;
-				height: 100%;
-			}*/
-			.boxx{
-				position: relative;
-				margin: 5% 10% 10% 10%;
-				background-color: white;
-				width: 80%;
-				height: 100%;
-				z-index: 10;
-				border-radius: 2px;
-             	box-shadow: 10px 8px 16px 0px rgba(0, 0, 0, 0.5);
-				padding: 5%;
-				text-align: center;
-				border-bottom: 10px solid black;
-=======
 			body{
 				 position:absolute
 				 height: 100%
@@ -40,17 +18,12 @@
 				padding: 5%;
 				text-align: center;
 				
->>>>>>> Stashed changes
              	
 			}
 			.outer
 			{
 				position: absolute;
 				width: 100%;
-<<<<<<< Updated upstream
-			}
-			.header {
-=======
 				z-index: 0;
 			}
 			/*.header {
@@ -75,35 +48,10 @@
 				
 				}*/
 				.header {
->>>>>>> Stashed changes
 				height: 8%;
 				width: 100%;
 				background: #063671 ;
 				box-shadow: 10px 8px 16px 0px ;
-<<<<<<< Updated upstream
-				/*position: fixed;*/
-				/*top: 0;*/
-				}
-
-			.foot{
-				height: 12%;
-				width: 100%;
-				background: white ;
-				/*box-shadow: 10px 8px 16px 0px ;*/
-				position: relative;
-				margin-top: 100%;
-				
-
-				}
-				/* Sticky footer styles
--------------------------------------------------- */
-				html {
-				  position: relative;
-				  min-height: 100%;
-				}
-
-			.flogo{
-=======
 				}
 
 			.foot{
@@ -117,19 +65,13 @@
 */
 				}
 				.flogo{
->>>>>>> Stashed changes
 					padding-top: 15px;
 					font-family: cambria;
 				}
 
-<<<<<<< Updated upstream
-			.brand{
-				color: white;
-=======
 
 			.brand{
 			    color: white;
->>>>>>> Stashed changes
 				width: 8%;
 				text-decoration: none;
 				box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
@@ -159,8 +101,6 @@
 				padding-top: 10px;
 				font-size: 20px;
 			}
-<<<<<<< Updated upstream
-=======
 		
 			ul>li {
 				display: inline-block;
@@ -173,15 +113,10 @@
 				text-decoration: none;
 				color: white;*/
 			}
->>>>>>> Stashed changes
 			.indent{
 				float: left;
 			}
 			.box{
-<<<<<<< Updated upstream
-				width:200px; 
-=======
->>>>>>> Stashed changes
 				height:30px; 
 				border-radius:5%;
 				box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
@@ -202,9 +137,6 @@
 				font-size: 30px;
 				color: white;
 			}
-<<<<<<< Updated upstream
-/* Ending of index page css*/
-=======
 			.col-md-6
 			{
 				max-width: 500px;
@@ -216,4 +148,3 @@
 			  margin-top: 6px;
 			}
 
->>>>>>> Stashed changes
