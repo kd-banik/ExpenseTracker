@@ -13,8 +13,10 @@ const submitBlog = function(request,response,next){
         if(error)
         throw error;
         console.log("Blog inserted sucessfully....");
-        response.writeHead(200,{"contentType":"text/json"});
-        response.end("Data Received and submitted");
+        response.type("text/html");
+        response.status(200).send("Data Received and submitted");
+        // response.writeHead(200,{"contentType":"text/json"});
+        // response.end("Data Received and submitted");
     });
 }
 module.exports = submitBlog;

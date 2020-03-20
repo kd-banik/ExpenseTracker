@@ -22,85 +22,9 @@
             </div>
         </nav>
     </header>
+    <div class = "container"> <h1 class ="text-center" >Welcome to OIT Blogs</h1></div>
     <div class = "container bg-oit-ghost blog-content">
-        <h1 class ="text-center" >Welcome to OIT Blogs</h1>
-        <!-- <div class = "row">
-            <div class = "col-md-4">
-                <div class = "card">
-                    <div class = "card-body">
-                        <img class = "card-img-top" src = "image/img_avatar.png" >
-                        <div class = "card-body">
-                            <h4 class = "card-title">9 Marketing Mistakes That Make You Look Like a Rookie</h4>
-                            <p class = "card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                            <button class = "btn bg-oit-green text-color-ghostwhite">Read More..</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class = "col-md-4">
-                <div class = "card">
-                    <div class = "card-body">
-                        <img class = "card-img-top" src = "image/img_avatar2.png" >
-                        <div class = "card-body">
-                            <h4 class = "card-title">The Best Ways to Do Market Research For Your Business Plan</h4>
-                            <p class = "card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                            <button class = "btn bg-oit-green text-color-ghostwhite">Read More..</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class = "col-md-4">
-                <div class = "card">
-                    <div class = "card-body">
-                        <img class = "card-img-top" src = "image/img_avatar.png" >
-                        <div class = "card-body">
-                            <h4 class = "card-title">The Easiest Way to Become a Successful Writer</h4>
-                            <p class = "card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                            <button class = "btn bg-oit-green text-color-ghostwhite">Read More..</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class = "row">
-            <div class = "col-md-4">
-                <div class = "card">
-                    <div class = "card-body">
-                        <img class = "card-img-top" src = "image/img_avatar.png" >
-                        <div class = "card-body">
-                            <h4 class = "card-title">The Quickest Way to Deliver Your Message? Make It Visual.</h4>
-                            <p class = "card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                            <button class = "btn bg-oit-green text-color-ghostwhite">Read More..</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class = "col-md-4">
-                <div class = "card">
-                    <div class = "card-body">
-                        <img class = "card-img-top" src = "image/img_avatar2.png" >
-                        <div class = "card-body">
-                            <h4 class = "card-title">Why You Should Forget Facebook</h4>
-                            <p class = "card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                            <button class = "btn bg-oit-green text-color-ghostwhite">Read More..</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class = "col-md-4">
-                <div class = "card">
-                    <div class = "card-body">
-                        <img class = "card-img-top" src = "image/img_avatar.png" >
-                        <div class = "card-body">
-                            <h4 class = "card-title">Why We Don't Have Technical Interviews for Technical Roles at Buffer</h4>
-                            <p class = "card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                            <button class = "btn bg-oit-green text-color-ghostwhite">Read More..</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+        
 
     </div>
     <footer class = "footer dark-blue">
@@ -122,14 +46,23 @@
             success: function(result,status,xhr){
                 console.log("success");
                 console.log(status);
-                console.log(JSON.parse(result));
-                loadBlog(JSON.parse(result))
+                console.log(result);
+                if(result.status == 200){
+                    loadBlog(result.result)
+                }
+                else{
+                    console.log(result.result);
+                    $(".blog-content").html(result.result);
+                }
+                //loadBlog(JSON.parse(result))
             },
             error: function(xhr,status,error){
 
                 console.log("error");
+                console.log(xhr);
                 console.log(status);
                 console.log(error);
+                $(".blog-content").html("<h1 class = 'text-center'>"+error+"</h1>");
             }
         });
     });    
@@ -156,7 +89,7 @@ function loadBlog(blogJson){
                 }
         html += '</div>';
     }
-    $(".blog-content").append(html);
+    $(".blog-content").html(html);
 }
 </script>
 

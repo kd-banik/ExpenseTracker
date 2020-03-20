@@ -27,12 +27,13 @@ $(document).ready(function (event){
                 console.log("Success");
                 console.log(status);
                 console.log(result);
-                let jsonCountSlug = JSON.parse(result);
+                let jsonCountSlug = result;
                 console.log(jsonCountSlug)
                 $("#blog-slug").val(blogSlug+"-"+jsonCountSlug[0].count_slug);
             },
             error: function(xhr,status,error){
                 console.log("error");
+                console.log(xhr);
                 console.log(status);
                 console.log(error);
             }
@@ -98,6 +99,24 @@ $(document).ready(function (event){
             },
             error: function(xhr,status,error){
                 console.log("error");
+                console.log(xhr);
+                let errors = xhr.responseJSON.error;
+                for(let index = 0 ; index < errors.length ; index++){
+                    if(errors[index].param == "blog_short_description"){
+                        $(".blog-short-description-error").html(errors[index].msg);
+                    }
+                    else if(errors[index].param == "blog_slug"){
+                        $(".blog-slug-error").html(errors[index].msg);
+                    }
+                    else if(errors[index].param == "blog_title"){
+                        $(".blog-title-error").html(errors[index].msg);
+                    }
+                    else if(errors[index].param == "blog_content"){
+                        $(".blog_editor_error").html(errors[index].msg);
+                    }
+
+                }
+                $(event.target).html("Post");
                 console.log(error);
                 console.log(status);
             }
