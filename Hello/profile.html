@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+
+  <title>index</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script type="text/javascript" src="index.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="simple-sidebar.css" rel="stylesheet">
+  <style>
+    .d-flex > #sidebar-wrapper > .list-group > a{
+      display: inline-block;
+      color:#7386D5;
+    }
+    
+    .d-flex > #sidebar-wrapper > .list-group > .dropdown-menu > a{
+      color:#7386D5;  }
+  </style>
+</head>
+
+<body style="background-color:white;"  onload="load()">
+  <div class="header" id="header">
+    <!--a class="brand" href="">Business Cards</a-->
+  
+    <img class="brand" src="oti.jpg">
+    <a class = "right" href = "#" style="height: 10px"><span class = "far fa-bell"></span></a>
+			<a class = "right" href = "#"><span class = "far fa-user"></span></a>
+  </div>
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-dark border-right" id="sidebar-wrapper">
+      
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item list-group-item-action bg-dark">Home</a>
+        
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Claims
+        </a>
+        <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item bg-dark" href="claim.html">Claim Now</a>
+          <a class="dropdown-item bg-dark" href="displayPending.html">Pending</a>
+          <a class="dropdown-item bg-dark" href="displayHistory.html">History</a>
+        </div>
+        <a href="approval.html" class="list-group-item list-group-item-action bg-dark">Approval</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+
+    <div id="page-content-wrapper">
+      <header class="navbar navbar-light">
+        <button class="navbar-toggler sidebar-toggler" id="menu-toggle" type="button" data-toggle="sidebar-show">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </header>        
+  </div>
+  <!-- /#wrapper -->
+  <!--table start-->
+    <div class = "container bg-light">
+        <div class = "row">
+
+            <div class = "col-sm-3">
+                <div class="card">
+                    <div class="card-header">Hello@123</div>
+                    <div class="card-body"><img class = "img-thumbnail" src = "image/display-pic.jfif"></div>
+                    <div class="card-footer">Hello World</div>
+                  </div>
+            </div>
+            <div class = "col-sm-9">
+                <div class = "container-fluid bg-light">
+                        <h1>Android Developer</h1>      
+                        <p>Ranking: 8.5/10</p>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" data-toggle="tab" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#project_undertaken">Project Undertaken</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#skills">Skills</a>
+                            </li>
+                          </ul>
+                        
+                          <!-- Tab panes -->
+                          <div class="tab-content">
+                            <div id="about" class="container tab-pane active"><br>
+                              <div class = "row">
+                                  <div class = "col-sm-6">EmpId: </div><div class = "col-sm-6">Hello@123</div>
+                              </div>
+                              <div class = "row">
+                                <div class = "col-sm-6">Name: </div><div class = "col-sm-6">Hello World</div>
+                              </div>
+                              <div class = "row">
+                                <div class = "col-sm-6">Email: </div><div class = "col-sm-6">Hello.123@gmail.com</div>
+                              </div>
+                              <div class = "row">
+                                <div class = "col-sm-6">Phone: </div><div class = "col-sm-6">123456789</div>
+                              </div>
+                              <div class = "row">
+                                <div class = "col-sm-6">Profession: </div><div class = "col-sm-6">Android Developer</div>
+                              </div>
+                            </div>
+                            <div id="project_undertaken" class="container tab-pane fade"><br>
+                              
+                              <div class = "row"><div class = "col-sm-6">EmpId: </div><div class = "col-sm-6">Hello@123</div></div>
+                              <div class = "row"><div class = "col-sm-6">Name: </div><div class = "col-sm-6">Hello World</div></div>
+                              <div class = "row"><div class = "col-sm-6">Email: </div><div class = "col-sm-6">Hello.123@gmail.com</div></div>
+                              <div class = "row"><div class = "col-sm-6">Phone: </div><div class = "col-sm-6">123456789</div></div>
+                              <div class = "row"><div class = "col-sm-6">Profession: </div><div class = "col-sm-6">Android Developer</div></div>
+                              <!-- <table class = "table">
+                                  <thead class = "thead-light">
+                                        <tr scope = "row"><th scope = "col">project Id</th><th scope = "col">Project name</th><th scope = "col">Status</th></tr>
+                                  </thead>
+                                  <tbody >
+                                      <tr><td>1</td><td>Truck navigation App</td><td>Completed</td></tr>
+                                  </tbody>
+                              </table> -->
+                            </div>
+                            <div id="skills" class="container tab-pane fade"><br>
+                              <h3>Menu 2</h3>
+                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            </div>
+                          </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  <!-- Footer Starts -->
+<footer>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="flogo">
+						
+							<img class="brandf" src="oti.jpg">
+
+                    <div class="" style="">
+                     <center>Headquarters: Godrej Waterside, Tower 1, 9th Floor, Sector V, Salt Lake City, West Bengal-700091, India&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     Copyright &copy; 2018 &nbsp;|&nbsp;
+                     <a href="#contact.php">Contact Us</a></center>
+                    </div>				
+                </div>
+		  	</div>
+		</div>
+	</div>
+</footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>

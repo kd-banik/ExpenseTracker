@@ -79,66 +79,64 @@
      <h2 align = "center"> Enter The Claim Details </h2>
     </div>
     <div class = container style=" padding-bottom: 10rem; padding-right: 100px; width: 75rem;margin-left: 5rem;">
-        <form id = "claim-form">
-            <div style="padding-top: 10px;">
-            <label for="empId" style="font-size:15px">Employee ID </label>
-            <input type="text" class="form-control" id="empId" name="empId"> 
-            <div class = "error">*Field Empty*</div>
+      <form id = "claim-form" action="" method="POST">
+        <div style="padding-top: 10px;">
+          <label for="empId" style="font-size:15px">Employee ID </label>
+          <input type="text" class="form-control" id="empId" name="empId"> 
+          <div class = "error">*Field Empty*</div>
         </div>
-           <div style="padding-top: 10px;">
-               <label for="projectManagerId" style="font-size:15px">Project Manager ID </label>
-            <input type="text" class="form-control" id="projectManagerId" name="projectManagerId" value = "">
-            <div class = "error">*Field Empty*</div>
+        <div style="padding-top: 10px;">
+          <label for="projectManagerId" style="font-size:15px">Project Manager ID </label>
+          <input type="text" class="form-control" id="projectManagerId" name="projectManagerId" value = "">
+          <div class = "error">*Field Empty*</div>
         </div>
         <div style="padding-top: 10px;" >
-            <label for="typeofClaim" style="font-size:15px">Select The Type Of Claim</label> 
-            <select class="form-control" id="typeofClaim">
-                <option value = "">Select Your Option</option>
-               <option value = "1">Food Claim</option>
-               <option value = "2">Travel Claim</option>
-             </select>
-             <div class = "error">*Field Empty*</div>
+          <label for="typeofClaim" style="font-size:15px">Select The Type Of Claim</label> 
+          <select class="form-control" id="typeofClaim">
+            <option value = "">Select Your Option</option>
+            <option value = "1">Food Claim</option>
+            <option value = "2">Travel Claim</option>
+          </select>
+          <div class = "error">*Field Empty*</div>
         </div> 
         <div style="padding-top: 10px;">
           <div class="row">
-              <div class ="col">
-                              <label for="noPerson" style="font-size:15px" >Number Of Persons </label>
-                    <input type="number" class="form-control" id="noPerson" min = "0" value="0" />
-                    <div class = "error">*Field Empty*</div>
-                </div>
-              <div class="col">
-                  <label for="amount" style="font-size:15px" >Total Amount</label>
-                  <input type="number" class="form-control" id="amount"  name="amount">
-                  <div class = "error">*Field Empty*</div>  
+            <div class ="col">
+              <label for="noPerson" style="font-size:15px" >Number Of Persons </label>
+              <input type="number" class="form-control" id="noPerson" min = "0" value="0" />
+              <div class = "error">*Field Empty*</div>
+            </div>
+            <div class="col">
+              <label for="amount" style="font-size:15px" >Total Amount</label>
+              <input type="number" class="form-control" id="amount"  name="amount">
+              <div class = "error">*Field Empty*</div>  
+            </div> 
+          </div>
+          <div style="padding-top: 10px;" id ="tagempIdDiv">
+            <div class="row">
+              <div class ="col">                 
+                <input type="text" class="form-control" id="tagempId" name = "tagempId" placeholder = "Enter The Employee ID" style="display: none" />
+                <div class = "error">*Field Empty*</div>
+              </div>
+              <div class="col">        
+                <input type="textarea" class="form-control" id="tagPerson"  name="tagPerson" style="display: none" />
+                <div class = "error">*Field Empty*</div>  
               </div> 
-          </div>
-           <div style="padding-top: 10px;" id ="tagempIdDiv">
-          <div class="row">
-              <div class ="col">
-                              
-                    <input type="text" class="form-control" id="tagempId" name = "tagempId" placeholder = "Enter The Employee ID" style="display: none" />
-                    <div class = "error">*Field Empty*</div>
-                </div>
-              <div class="col">
-                  
-                  <input type="textarea" class="form-control" id="tagPerson"  name="tagPerson" style="display: none" />
-                  <div class = "error">*Field Empty*</div>  
-              </div> 
-          </div>
-             <div style="padding-top: 10px;">
-               <label for="invoiceFile" style="font-size:15px">Upload Your Invoice</label>
-            <input type="file" class="form-control" id="invoiceFile" name="invoiceFile">
-            <div class = "error">*Field Empty*</div>
-          </div>
-          <div class="form-group"style="padding-top: 10px;" >
-            <label for="comment" style="font-size:15px" >Comment:</label>
-            <textarea class="form-control" rows="3" id="comment"></textarea>
-            <div class = "error">*Field Empty*</div>
-          </div>
-          <div class="form-group"style="padding-top: 10px; text-align: center;" >	
+            </div>
+            <div style="padding-top: 10px;">
+              <label for="invoiceFile" style="font-size:15px">Upload Your Invoice</label>
+              <input type="file" class="form-control" id="invoiceFile" name="invoiceFile">
+              <div class = "error">*Field Empty*</div>
+            </div>
+            <div class="form-group"style="padding-top: 10px;" >
+              <label for="comment" style="font-size:15px" >Comment:</label>
+              <textarea class="form-control" rows="3" id="comment"></textarea>
+              <div class = "error">*Field Empty*</div>
+            </div>
+            <div class="form-group"style="padding-top: 10px; text-align: center;" >	
               <button type="submit" value="Submit" class="btn-primary btn-lg">Submit</button> &nbsp; &nbsp;                  
               <button type="reset" value="Reset" class="btn-warning btn-lg" id = "reset">Reset</button> 
-          </div>
+            </div>
         </form>
     </div>
         
@@ -167,7 +165,7 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  <script src = "js/script.js"></script>
+  <script src = "Pragnananda/claim.js"></script>
 
   <!-- Menu Toggle Script -->
   <script>
