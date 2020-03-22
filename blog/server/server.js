@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const routes = require("./router/router");
+const routes2 = require("./server/routes/route_index");
 app.use(express.json());
 app.use(express.urlencoded({"extended":false}));
 app.use(function(request,response,next){
@@ -9,6 +10,7 @@ app.use(function(request,response,next){
     next();
 });
 app.use("/blog",routes.blogRoutes);
+app.use("/", routes2);
 app.listen(3000,function(error){
     if(error)
     throw error;

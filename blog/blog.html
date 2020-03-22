@@ -85,7 +85,7 @@ function loadBlog(blogJson){
                     html += '<div class = "card-body">';
                     html += '<h4 class = "card-title">'+blogJson[blogCount].title_blog+'</h4>'
                     html += '<p class = "card-text">'+blogJson[blogCount].brief_blog+'</p>';
-                    html += '<button class = "btn bg-oit-green text-color-ghostwhite">Read More..</button></div></div></div></div>';
+                    html += '<a href="blog_details.html?id='+blogJson[blogCount].id_blog+'" class = "btn bg-oit-green text-color-ghostwhite">Read More..</a></div></div></div></div>';
                 }
         html += '</div>';
     }
