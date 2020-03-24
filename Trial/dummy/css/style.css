@@ -1,0 +1,15 @@
+/************************************************CODE OF HOME PAGE BY KUSHAL BANIK********************************************************/
+.logo-dark-blue{
+    background-color: #063671 !important;
+}
+.logo{
+    display: block;
+    max-width: 100px;
+    max-height: 35px;
+    box-shadow: 6px 3px 10px #000000;
+}
+.right{
+    float: right;
+    display: block !important;
+}
+/************************************************CODE OF HOME PAGE BY KUSHAL BANIK********************************************************/
