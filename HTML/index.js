@@ -16,28 +16,33 @@ function ajaxcall(){
 			}),
 			success: function (data) {
 				console.log("ajax is working")
-				//alert('Data: ' + data);
-				
+				//alert('Data: ' + data);		
+			},
+			error : function(xhr,status,err){
+				console.log(xhr.responseJson)
 			}
+			
 		});
 }
 
- function load () {
-		document.getElementById('register').style="display:none;";
-		//document.getElementById('check').value="Register";
-	}
-	function register () {
-		document.getElementById('register').style="height:100%;";
-		document.getElementById('login').style="display:none";
-		//document.getElementById('check').value="Login";
-		//document.getElementById('header').style="display:none";
-	}
-	function login () {
-		document.getElementById('register').style="display:none;";
-		document.getElementById('login').style="display:block;";
-		document.getElementById('check').value="Register";
-		//document.getElementById('header').style="display:none";
-	}
+function ajaxlog() {
+	//alert("login is running")
+	$.ajax({
+		url: 'http://localhost:8000/login',
+		type: 'post',
+		contentType: 'application/json',
+		data: JSON.stringify({
+			e_mail: $("#e_mail").val(),
+			pword: $("#pword").val()
+		}),
+		success: function (data) {
+			console.log("ajax login is working")
+			//alert('Data: ' + data);
+		}
+	});
+}
+
+
 	function check () {
 		
 		var che= document.getElementById('check').value;
@@ -55,21 +60,7 @@ function ajaxcall(){
 		}
 		
 	}
-	function validation()
-	{
-		
-		var check=document.getElementById('email').type;
-		if(check=="email")
-		{
-			var value=document.getElementById('email').value;
-			if(value=="")
-			{
 
-				document.getElementById('error').innerHTML="Incorrect Email Address";
-
-			}
-		}
-	}
 
 
 	  function Validate() {
