@@ -1,0 +1,151 @@
+			*/
+			body{
+				 position:absolute
+				 height: 100%
+			 	 padding: 0
+				 margin: 0;
+				 width: 100%;
+				
+			}
+			.boxx{
+				position: relative;
+				margin: 8% 10% 10% 10%;
+				background-color: white;
+				width: 40%;
+				height: 100%;
+				z-index: 10;
+				border-radius: 2px;
+             	box-shadow: 10px 8px 16px 10px rgba(0, 0, 0.5, 0.5);
+				padding: 5%;
+				text-align: center;
+				
+             	
+			}
+			.outer
+			{
+				position: absolute;
+				width: 100%;
+				z-index: 0;
+			}
+			/*.header {
+				height: 8%;
+				width: 100%;
+				background: #063671 ;
+				box-shadow: 10px 8px 16px 0px ;
+				position: fixed;
+				z-index: 1;
+			
+				}*/
+
+		/*	.footer {
+			
+				bottom: 0;
+				position: fixed;
+				height: 8%;
+				width: 100%;
+				background: white ;
+				box-shadow: 10px 8px 16px 0px ;
+				z-index: 0;
+				
+				}*/
+				.header {
+				height: 8%;
+				width: 100%;
+				background: #063671 ;
+				box-shadow: 10px 8px 16px 0px ;
+				}
+
+			.foot{
+				bottom: 0;
+				position: fixed;
+				height: 10%;
+				width: 100%;
+				background: white ;
+				box-shadow: 10px 8px 16px 0px ;
+				z-index: 0;
+				
+				}
+				.flogo{
+					padding-top: 15px;
+					font-family: cambria;
+				}
+
+
+			.brand{
+			    color: white;
+				width: 8%;
+				text-decoration: none;
+				box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+				padding: 5px;
+				float: left;
+			}
+			.brandf{
+				color: white;
+				width: 8%;
+				text-decoration: none;
+				padding-bottom: 15px;
+				float: left;
+			}
+			.left{
+				float: left;
+				margin: 0;
+				width: 2%;
+				height: 60%;
+				padding-right: 4%;
+			}
+			.right{
+				float: right;
+				margin: 0;
+				width: 2%;
+				height: 60%;
+				padding-right: 4%;
+				padding-top: 10px;
+				font-size: 20px;
+			}
+		
+			ul>li {
+				display: inline-block;
+				padding: 20px;
+				font-size: 30px;
+				list-style: none;
+				margin-right: 30px;
+			}
+			li>a {
+				text-decoration: none;
+				color: white;
+			}
+			.indent{
+				float: left;
+			}
+			.box{
+				height:30px; 
+				border-radius:5%;
+				box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+				
+			}
+			.button
+			{
+				font-size: 15px;
+				width: 120px;	
+				height: 30px;
+				border-radius: 2px;
+             	box-shadow: 4px 5px 8px 0px rgba(0, 0, 0, 0.5);
+				margin: 20px;
+			}
+			.btn {
+				border: none;
+				background-color: black;
+				font-size: 30px;
+				color: white;
+			}
+			.col-md-6
+			{
+				max-width: 500px;
+
+			}
+			.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
